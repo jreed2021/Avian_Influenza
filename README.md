@@ -71,6 +71,7 @@ Avian_Influenza/
 ├── src/
 │   └── HPAI/       # Choropleth Map Directory
 │     └── HPAI-map.py       # Main Choropleth file
+│     └── State_conversion.py       # State conversion function
 │
 ├── lib/
 │   └── Dependancy info goes here    # library
