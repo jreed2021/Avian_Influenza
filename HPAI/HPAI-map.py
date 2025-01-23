@@ -2,7 +2,7 @@
 
 import requests
 from io import StringIO
-import plotly
+import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 from State_Conversion import state_conversion
@@ -14,11 +14,12 @@ Created: 1/21/25
 Version: 1.2
 Description:
     This script displays a choropleth map of the United States containing highly pathogenic avian influenza
-    cases obtained from the Aphis USDA website.
+    animal cases obtained from the Aphis USDA website and filtered by year.
 
 License: MIT License
 """
 
+# Detection of Highly Pathogenic Avian Influenza in captive and wild animals obtained from the USDA website May 2022 to present
 url = "https://www.aphis.usda.gov/sites/default/files/hpai-mammals.csv"  # HPAI Detections in mammals from USDA
 
 response = requests.get(url)
@@ -29,21 +30,80 @@ data = pd.read_csv(StringIO(response.text))
 
 #print(data.tail(30))  # Display the first few rows
 
+"""
+***Data Manipulation***
+"""
+
 # Create a column containing just the year
 data['Year'] = pd.DatetimeIndex(data['Date Detected']).year
 
-# Create new column in data with the state abbreviation
+# Create new column in data with the state abbreviation for Choropleth plotting
 data['Abbreviation'] = data['State'].apply(state_conversion)
 
 # Create a new data frame with state counts per year
-counts_year = data.groupby(['State', 'Year']).size().reset_index(name='State_Count')
+counts_year = data.groupby(['Abbreviation', 'Year']).size().reset_index(name='State_Count')
 
 # Create new data frame with total state counts
 counts_total = data.groupby(['Abbreviation']).size().reset_index(name='State_Count')
 
-# print(data.head())
+print(data.head())
+
+"""
+***Map Plotting***
+"""
+
+# Create Figure
+fig = go.Figure()
 
 # create figure containing total state counts of HPAI in the USA
-fig = px.choropleth(counts_total, locations='Abbreviation', locationmode="USA-states", color='State_Count', scope="usa")
+#fig = px.choropleth(counts_total, locations='Abbreviation', locationmode="USA-states", color='State_Count', scope="usa",
+#                    hover_data={'Abbreviation': False, 'State_Count': False}, hover_name='State_Count',
+#                    title='State Cases of Highly Pathogenic Avian Influenza')
+
+# Add traces for each year
+years = sorted(data['Year'].unique(), reverse=True)
+for year in years:
+    # Filter the data for the specific year
+    yearly_data = counts_year[counts_year['Year'] == year]
+
+    # Add choropleth trace for the year
+    fig.add_trace(go.Choropleth(
+        locations=yearly_data['Abbreviation'],
+        z=yearly_data['State_Count'],
+        locationmode="USA-states",
+        colorscale="portland",
+        colorbar_title="Count",
+        name="",
+        visible=(year == years[0])  # Only the lastyear is visible by default
+    ))
+
+# Add dropdown menu
+dropdown_buttons = [
+    dict(
+        label=str(year),
+        method="update",
+        args=[{"visible": [year == y for y in years]},  # Toggle visibility of traces
+              {"title": f"State Cases of Highly Pathogenic Avian Influenza - {year}"}]
+    )
+    for year in years
+]
+
+# Update layout with dropdown menu and title
+fig.update_layout(
+    updatemenus=[
+        dict(
+            active=0,
+            buttons=dropdown_buttons,
+            direction="down",
+            showactive=True,
+            x=0.5,
+            y=1.2,
+            xanchor="right",
+            yanchor="top"
+        )
+    ],
+    title=("State Cases of Highly Pathogenic Avian Influenza - Current Year"),
+    geo=dict(scope="usa", projection={"type": "albers usa"})
+)
 
 fig.show()
