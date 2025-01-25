@@ -66,23 +66,23 @@ To Be Determined
 ## Example Project Structure
 
 ```
-Avian_Influenza/
+├── LICENSE # License file for the project 
 │
-├── src/
-│   └── HPAI/       # Choropleth Map Directory
-│     └── HPAI-map.py       # Main Choropleth file
-│     └── State_conversion.py       # State conversion function
+├── README.md # Project README with usage instructions 
 │
-├── lib/
-│   └── Dependancy info goes here    # library
+├── Main.py # Main entry point for the program 
 │
-├── input/
-│   └── sample_sequence.fasta     # Example input sequence file
+├── Genetic_Analysis/ # Folder for genetic analysis scripts and resources 
 │
-├── output/
-│   └── To be Determined         # Example output
+├── HPAI_maps/ # Folder for HPAI mapping and related functionalities 
+│   │
+│   ├── init.py # Marks this as a Python package 
+│   │
+│   ├── HPAI_map.py # Script for generating HPAI choropleth maps 
+│   │
+│   └── State_Conversion.py # Helper script for state name to abbreviation conversion 
 │
-└── README.md                    # Project documentation (this file)
+├── Phylogenetics/ # Folder for phylogenetic analysis scripts and resources
 ```
 
 ## Troubleshooting
