@@ -16,7 +16,7 @@ This Python program will perfom an analysis that is to be determined potentially
 
 ### Prerequisites
 
-- **Python 3.5 or Higher**
+- **Python 3.8 or higher**
 
   
 ### Setting Up the Project
@@ -26,17 +26,32 @@ This Python program will perfom an analysis that is to be determined potentially
 ```bash
 git clone https://github.com/Debbie227/Avian_Influenza.git
 ```
+3. (Recommended) Create a virtual environment:
 
-2. Install dependencies:
+```bash
+python -m venv venv
 
-To Be Determined**
+source venv/bin/activate    # On macOS/Linux
+venv\Scripts\activate       # On Windows
+```
+
+3. Install dependencies:
+
+The following Python libraries are required:
+- `pandas` (>=1.3.0) for data manipulation and analysis
+- `plotly` (>=5.0.0) for interactive visualizations
+- `numpy` (>=1.21.0) for numerical operations
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Usage
 
 The program is run from the command line and accepts no arguments:
 
 ```bash
-Code To Be Determined
+python Main.py
 ```
 
 ### Input:
@@ -51,10 +66,10 @@ Code To Be Determined
 
 ### Example Usage:
 
-1. Python 3.5 or above:
+1. Python 3.8 or above:
 
 ```bash
-Code To Be Determined
+python Main.py
 ```
 
 
