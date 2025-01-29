@@ -6,7 +6,7 @@ This Python program will perfom an analysis that is to be determined potentially
 
 - **Sequence Input**: The program can accept a nucleotide sequence either from a FASTA file or entered manually.
 - **BLAST Search**: It connects to the NCBI BLAST service and performs a nucleotide BLAST search.
-- **Sequence ALignemnt**: 
+- **Sequence Alignemnt**: 
 - **Phylogenetic Tree Construction**:
 - **Nucleotide and Protein Comparison**:
 - **Interactive Choropleth Map**:
@@ -25,8 +25,9 @@ This Python program will perfom an analysis that is to be determined potentially
 
 ```bash
 git clone https://github.com/Debbie227/Avian_Influenza.git
+cd Avian_Influenza
 ```
-3. (Recommended) Create a virtual environment:
+2. (Recommended) Create a virtual environment:
 
 ```bash
 python -m venv venv
@@ -41,6 +42,7 @@ The following Python libraries are required:
 - `pandas` (>=1.3.0) for data manipulation and analysis
 - `plotly` (>=5.0.0) for interactive visualizations
 - `numpy` (>=1.21.0) for numerical operations
+- `requests` (>=2.32.3) for http get operations
 
 ```bash
 pip install -r requirements.txt
@@ -87,7 +89,13 @@ To Be Determined
 │
 ├── Main.py # Main entry point for the program 
 │
+├── requirements.txt # Dependencies for the program 
+│
 ├── Genetic_Analysis/ # Folder for genetic analysis scripts and resources 
+│   │
+│   ├── init.py # Marks this as a Python package
+│
+│   ├── MUSCLE.py # Multiple Sequence Alignment module
 │
 ├── HPAI_maps/ # Folder for HPAI mapping and related functionalities 
 │   │
@@ -98,6 +106,16 @@ To Be Determined
 │   └── State_Conversion.py # Helper script for state name to abbreviation conversion 
 │
 ├── Phylogenetics/ # Folder for phylogenetic analysis scripts and resources
+│   │
+│   ├── init.py # Marks this as a Python package 
+│
+├── Example_files/ # Folder for Example input
+│   │
+│   ├──H5_sequences.fasta  
+│
+├── Output_files/ # Folder for Output
+│   │
+│   ├──  
 ```
 
 ## Troubleshooting

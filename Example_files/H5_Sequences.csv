@@ -1,0 +1,45 @@
+Accession Number,Organism,Subtype,Segment,Host,Geographic Location,Collection Date,Sequence Length,FASTA File Name
+KJ484609.1,Influenza A virus (A/duck/Hunan/747/2011),H5,4(HAgene),Duck,"Hunan, China",2011-12-28,1707,H5_HA_KJ484609.fasta
+MK026971.1,Influenza A virus (A/chicken/China/6285/2016),H5,4(HAgene),Chicken,China,2016,1704,H5_HA_MK026971.fasta
+KP286666.1,Influenza A virus (A/chicken/Dongguan/1100/2014),H5,4(HAgene),Chicken,"Dongguan, China",2014,1704,H5_HA_KP286666.fasta
+KP286665.1,Influenza A virus (A/chicken/Dongguan/1100/2014),H5,4(HAgene),Chicken,"Dongguan, China",2014,1683,H5_HA_KP286665.fasta
+K2286635.1,Influenza A virus (A/black chicken/Jiangxi/10139/2014),H5,4(HAgene),Black Chicken,"Jiangxi, China",2014,1683,H5_HA_KP286635.fasta
+KP286634.1,Influenza A virus (A/black chicken/Jiangxi/10139/2014),H5,4(HAgene),Black Chicken,"Jiangxi, China",2014,1704,H5_HA_KP286634.fasta
+KP286620.1,Influenza A virus (A/black chicken/Jiangxi/10136/2014),H5,4(HAgene),Black Chicken,"Jiangxi, China",2014,1683,H5_HA_KP286620.fasta
+KP286619.1,Influenza A virus (A/black chicken/Jiangxi/10136/2014),H5,4(HAgene),Black Chicken,"Jiangxi, China",2014,1704,H5_HA_KP286619.fasta
+KP286608.1,Influenza A virus (A/black chicken/Jiangxi/10131/2014),H5,4(HAgene),Black Chicken,"Jiangxi, China",2014,1683,H5_HA_KP286608.fasta
+KP286607.1,Influenza A virus (A/black chicken/Jiangxi/10131/2014),H5,4(HAgene),Black Chicken,"Jiangxi, China",2014,1704,H5_HA_KP286607.fasta
+KP286597.1,Influenza A virus (A/chicken/Jiangxi/10122/2014),H5,4(HAgene),Chicken,"Jiangxi, China",2014,1683,H5_HA_KP286597.fasta
+KP286596.1,Influenza A virus (A/chicken/Jiangxi/10122/2014),H5,4(HAgene),Chicken,"Jiangxi, China",2014,1704,H5_HA_KP286596.fasta
+KP286584.1,Influenza A virus (A/chicken/Dongguan/2818/2013),H5,4(HAgene),Chicken,"Dongguan, China",2013,1683,H5_HA_KP286584.fasta
+KP286583.1,Influenza A virus (A/chicken/Dongguan/2818/2013),H5,4(HAgene),Chicken,"Dongguan, China",2013,1704,H5_HA_KP286583.fasta
+KP286563.1,Influenza A virus (A/chicken/Dongguan/4190/2013),H5,4(HAgene),Chicken,"Dongguan, China",2013,1704,H5_HA_KP286563.fasta
+KP286562.1,Influenza A virus (A/chicken/Dongguan/4190/2013),H5,4(HAgene),Chicken,"Dongguan, China",2013,1683,H5_HA_KP286562.fasta
+KP286549.1,Influenza A virus (A/chicken/Shenzhen/2072/2013),H5,4(HAgene),Chicken,"Shenzhen, China",2013,1683,H5_HA_KP286549.fasta
+KP286548.1,Influenza A virus (A/chicken/Shenzhen/2072/2013),H5,4(HAgene),Chicken,"Shenzhen, China",2013,1704,H5_HA_KP286548.fasta
+KP286547.1,Influenza A virus (A/chicken/Shenzhen/2072/2013),H5,4(HAgene),Chicken,"Shenzhen, China",2013,1683,H5_HA_KP286547.fasta
+KP286538.1,Influenza A virus (A/chicken/Shenzhen/712/2013),H5,4(HAgene),Chicken,"Shenzhen, China",2013,1704,H5_HA_KP286538.fasta
+KF313562.1,Influenza A virus (A/goose/Hebei/9/2007),H9N2,4(HAgene),Goose,"Hebei, China",2007,1707,H9_HA_KF313562.fasta
+MK616085.1,Influenza A virus (A/swan/China/ST/2016(H5N8),H5N8,4(HAgene),Swan,China,2016,1707,H5_HA_MK616085.fasta
+MH988774.1,Influenza A virus (A/teal/Markeev/13-3-11/2016(H5N2)),H5N2,4(HAgene),Teal,"Markeev, Russia",2016,1707,H5_HA_MH988774.fasta
+MH988773.1,Influenza A virus (A/Mallard/Markeev/16-3-11/2016(H5N2)),H5N2,4(HAgene),Mallard,"Markeev, Russia",2016,1707,H5_HA_MH988773.fasta
+MH988772.1,Influenza A virus (A/great crested grebe/Sevastopol/11-173/2008(H5N1)),H5N1,4(HAgene),Great Crested Grebe,"Sevastopol, Ukraine",2008,1707,H5_HA_MH988772.fasta
+MH988771.1,Influenza A virus (A/cormorant/Strilkova Kherson/63/2006(H5N1)),H5N1,4(HAgene),Cormorant,"Strilkova Kherson, Ukraine",2006,1707,H5_HA_MH988771.fasta
+MH558952.1,Influenza A virus (A/chicken/Egypt/ME1010/2016(H5N1)),H5N1,4(HAgene),Chicken,Egypt,2016,1707,H5_HA_MH558952.fasta
+KT327411.1,Influenza A virus (A/Bulbul/Taiwan/01156/2015(H5N3)),H5N3,4(HAgene),Bulbul,Taiwan,2015,1707,H5_HA_KT327411.fasta
+KT327403.1,Influenza A virus (A/thrush/Taiwan/A234/2015(H5N2)),H5N2,4(HAgene),Thrush,Taiwan,2015,1707,H5_HA_KT327403.fasta
+KT327395.1,Influenza A virus (A/night heron/Taiwan/A289/2015(H5N2)),H5N2,4(HAgene),Night Heron,Taiwan,2015,1707,H5_HA_KT327395.fasta
+LC145035.1,Influenza A virus (A/duck/Chiba/4-V463/2009(H5N3)),H5N3,4(HAgene),Duck,"Chiba, Japan",2009,1707,H5_HA_LC145035.fasta
+JX258652.1,Influenza A virus (A/wild bird/Korea/A71/2010(H5N2)),H5N2,4(HAgene),Wild Bird,Korea,2010,1707,H5_HA_JX258652.fasta
+PQ832026.1,Influenza A virus (A/cattle/MI/24-010786-002-original/2024(H5N1)),H5N1,1(PB2gene),Cattle,"Michigan, USA",2024,2280,PQ832026_A_cattle_MI_24-010786-002_original_2024_H5N1_PB2.fasta
+PQ832029.1,Influenza A virus (A/cattle/MI/24-010786-002-original/2024(H5N1)),H5N1,4(HAgene),Cattle,"Michigan, USA",2024,1707,PQ832029_A_cattle_MI_24-010786-002_original_2024_H5N1_HA.fasta
+ON759331.1,Influenza A virus (A/Colorado/18/2022(H5N1)),H5N1,HA,Human,"Colorado, USA",2022,1704,
+OP209766.1,Influenza A virus (A/Yangzhou/125/2022(H5N6)),H5N6,1(PB2gene),Human,"Yangzhou, China",2022,2280,
+KP864435.1,Influenza A virus (A/Egypt/N0005/2015(H5N1)),H5N1,1(PB2gene),Human,Egypt,2015,1704,
+AF046096.1,Influenza A virus (A/Hong Kong/481/97(H5N1)),H5,HA,Human,Hong Kong,1997,1741,
+OL519551.1,Influenza A virus (A/Guangdong/lgf/2021(H5N6)),H5N6,HA,Human,Guangdong,2021,1704,
+NC_007362.1,Influenza A virus (A/goose/Guangdong/1/1996(H5N1)),H5N1,HA,Goose,"Guangdong, China",1996,1773,
+AY818135.1,Influenza A virus (A/Human(H5N1),H5N1,HA,Human,Vietnam,2004,1707,
+DQ320923.1,Influenza A virus (H5N1),H5N1,HA,Grey Heron,Hon Kong,2004,1700,
+CY045703.1,Influenza A virus (H1N2),H1N2,HA,Swine,"Oklahoma, USA",2008,1707,
+PQ809549.1,Influenza A virus (H5N1),H5N1,NEP gene,Unknown,Louisiana,2024,725,
