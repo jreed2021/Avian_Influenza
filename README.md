@@ -6,7 +6,7 @@ This Python program will perfom an analysis that is to be determined potentially
 
 - **Sequence Input**: The program can accept a nucleotide sequence either from a FASTA file or entered manually.
 - **BLAST Search**: It connects to the NCBI BLAST service and performs a nucleotide BLAST search.
-- **Sequence Alignemnt**: 
+- **Sequence Alignment**: 
 - **Phylogenetic Tree Construction**:
 - **Nucleotide and Protein Comparison**:
 - **Interactive Choropleth Map**:
@@ -43,6 +43,9 @@ The following Python libraries are required:
 - `plotly` (>=5.0.0) for interactive visualizations
 - `numpy` (>=1.21.0) for numerical operations
 - `requests` (>=2.32.3) for http get operations
+- `seaborn` (>=0.13.2) 
+- `matplotlib` (>=3.10.0) 
+- `bio` (>=1.7.1) 
 
 ```bash
 pip install -r requirements.txt
