@@ -6,10 +6,13 @@ This Python program will perfom an analysis that is to be determined potentially
 
 - **Sequence Input**: The program can accept a nucleotide sequence either from a FASTA file or entered manually.
 - **BLAST Search**: It connects to the NCBI BLAST service and performs a nucleotide BLAST search.
-- **Sequence Alignment**: 
-- **Phylogenetic Tree Construction**:
-- **Nucleotide and Protein Comparison**:
-- **Interactive Choropleth Map**:
+- **Sequence Alignment**: (Not Yet Implemented in Main)
+- **Phylogenetic Tree Construction**: (Not Yet Implemented) The Phylogenetic Tree feature will allow visualization of the evolutionary relationships between different H5 strains. It will involve aligning sequences using MAFFT, constructing a tree using PhyML, and analyzing divergence patterns.
+- **Nucleotide and Protein Comparison**: (Not Yet Implemented in Main) 
+  - The Nucleotide Comparison feature is designed to compare genetic sequences between H5 strains to detect conserved regions and mutations. It will identify SNPs (single nucleotide polymorphisms) and differences in nucleotide composition to assess genetic variation and potential functional changes.
+  - The Amino Acid Comparison feature will focus on protein-level differences among H5 strains. It will help us analyze mutations that could impact protein structure, function, and host adaptation. We plan to evaluate amino acid substitutions, hydrophobicity, and potential effects on viral fitness and virulence.
+- **Interactive Choropleth Map**: The Choropleth map shows the yearly cases of highly pathogenic Avian strains of influenza in wildlife in the US. 
+  - (Not Yet Implemented) The map will include human cases of H5 Influenza in the US as well as strain data.
 
 
 ## Installation
