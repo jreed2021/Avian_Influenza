@@ -1,6 +1,19 @@
+#!/usr/bin/env python3
+
 from Bio import SeqIO, AlignIO
 from collections import Counter
 
+"""
+File name: seq_frequency.py
+Author: Debra Pacheco
+Created: 02/01/25
+Version: 1.0
+Description:
+    This script will generate a dictionary of containing the counts of amino acids at each postion from a multiple sequence
+    alignment.
+
+License: MIT License
+"""
 
 # Define file paths
 msa_file = "clustalo-I20250131-012913-0270-28960768-p1m.fa"

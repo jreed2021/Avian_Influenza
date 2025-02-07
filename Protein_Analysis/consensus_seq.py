@@ -1,6 +1,18 @@
+#!/usr/bin/env python3
+
 from Bio import AlignIO
 from collections import Counter
 
+"""
+File name: consensus_seq.py
+Author: Debra Pacheco
+Created: 02/01/25
+Version: 1.0
+Description:
+    This script will generate a consensus sequence 
+
+License: MIT License
+"""
 
 def get_consensus_sequence(msa_file, accession_file):
     """
